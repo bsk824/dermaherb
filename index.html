@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>SKINLUX</title>
+<title>DERMAHERB</title>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi" name="viewport">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -9,6 +9,8 @@
 <link rel="stylesheet" type="text/css" href="css/default.css">
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/contents.css">
+<link rel="stylesheet" type="text/css" href="css/common-mob.css" media="all and (max-width:1200px)">
+<link rel="stylesheet" type="text/css" href="css/contents-mob.css" media="all and (max-width:1200px)">
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/jquery.bxslider.js"></script>
@@ -17,531 +19,135 @@
     <script src="js/html5shiv.min.js"></script>
 <![endif]-->
 </head>
-
 <body>
-	<ul class="skipNavi">
+    <ul class="skipNavi">
 		<li><a href="#container">본문 바로가기</a></li>
-		<li><a href="#gnb">메뉴 바로가기</a></li>
+		<li><a href="#header">메뉴 바로가기</a></li>
 	</ul>
-	<header id="header">
-		<div class="headTop">
-			<h1><a href="/">SKINLUX</a></h1>
-			<button type="button" class="btnMobNav"><span>메뉴 열기</span></button>
-		</div>
-		<div id="gnb">
-			<div class="headUtil">
-				<nav>
-					<a href="tel:025470175" class="phone">전화상담 <span>02)547.0175</span></a>
-					<span>
-						<a href="#" class="login">로그인</a>
-						<a href="#" class="logout">로그아웃</a>
-						<a href="#" class="join">회원가입</a>
-						<a href="#" class="info">병원소개</a>
-						<a href="#" class="map">오시는길</a>
-					</span>
-					<p class="tip">회원가입 후 로그인을 하시면<br>치료사례/후기를 보실 수 있습니다.</p>
-				</nav>
-			</div>
-			<nav class="gnbMenu">
-				<ul>
-					<li><a href="#">SKIN 클리닉</a>
-						<div class="depth2 type2">
-							<ul>
-								<li><a href="#">지루성 피부염</a></li>
-								<li><a href="#">스테로이드 부작용</a></li>
-								<li><a href="#">여드름(안면/등/가슴)</a></li>
-								<li><a href="#">아토피/건선</a></li>
-								<li><a href="#">안면홍조/레이저 부작용</a></li>
-								<li><a href="#">매선</a></li>
-							</ul>
-						</div>
-					</li>
-					<li><a href="#">DIET 클리닉</a>
-						<div class="depth2">
-							<ul>
-								<li><a href="#">비만</a></li>
-								<li><a href="#">다이어트약</a></li>
-							</ul>
-						</div>
-					</li>
-					<li><a href="#" class="non2depth">치료사례/후기</a></li>
-					<li><a href="#" class="non2depth">상담 및 예약</a></li>
-					<li><a href="#">병원소식</a>
-						<div class="depth2">
-							<ul>
-								<li><a href="#">공지사항</a></li>
-								<li><a href="#">스타방문</a></li>
-								<li><a href="#">언론보도</a></li>
-								<li><a href="#">이벤트 </a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</nav>
-			<button type="button" class="btnClose"><span>메뉴 닫기</span></button>
-		</div>
-	</header>
-	<div id="container">
-		<div class="mainSlide">
-			<ul>
-				<li>
-					<a href="#" style="background-image:url('images/img_main_slide.jpg');">
-						<img src="images/img_main_slide_mob.jpg" alt="" />
-					</a>
-				</li>
-				<li>
-					<a href="#" style="background-image:url('images/img_main_slide.jpg');">
-						<img src="images/img_main_slide_mob.jpg" alt="" />
-					</a>
-				</li>
-				<li>
-					<a href="#" style="background-image:url('images/img_main_slide.jpg');">
-						<img src="images/img_main_slide_mob.jpg" alt="" />
-					</a>
-				</li>
-			</ul>
-		</div>
-		<ul class="mainNotice">
-		    <li>
-		        <a href="#">
-                    <b>[공지사항]</b>
-                    <span class="txt">1111111111111111.</span>
-                    <span class="date">2017.02.16</span>
+    <header id="header">
+        <div class="headerWrap">
+            <h1><a href="#"><img src="images/img_logo.png" alt="DERMAHERB"></a></h1>
+            <button type="button" class="btnMenu">메뉴열기</button>
+            <nav>
+                <ul>
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">제품소개</a>
+                        <ul>
+                            <li><a href="#">백옥마스크</a></li>
+                            <li><a href="#">태반마스크</a></li>
+                            <li><a href="#">신데렐라마스크</a></li>
+                            <li><a href="#">물광하이드로겔 마스크</a></li>
+                            <li><a href="#">베이비페이스 마스크</a></li>
+                            <li><a href="#">EGF 허브톡스 세럼</a></li>
+                            <li><a href="#">셀화이트닝 비비</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <button type="button" class="btnCloseMenu">메뉴닫기</button>
+            </nav>
+        </div>
+    </header>
+    <div id="container">
+        <section class="mainSlide">
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+            </ul>
+        </section>
+        <section class="mainProdSlide">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="img"><img src="" alt=""></span>
+                        <strong class="tit">제품명제품명제품명제품명제품명</strong>
+                        <span class="txt">제품설명제품설명제품설명제품설명제품설명제품설명제품설명제품설명</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="img"><img src="" alt=""></span>
+                        <strong class="tit">제품명제품명제품명제품명제품명</strong>
+                        <span class="txt">제품설명제품설명제품설명제품설명제품설명제품설명제품설명제품설명</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="img"><img src="" alt=""></span>
+                        <strong class="tit">제품명제품명제품명제품명제품명</strong>
+                        <span class="txt">제품설명제품설명제품설명제품설명제품설명제품설명제품설명제품설명</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="img"><img src="" alt=""></span>
+                        <strong class="tit">제품명제품명제품명제품명제품명</strong>
+                        <span class="txt">제품설명제품설명제품설명제품설명제품설명제품설명제품설명제품설명</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="img"><img src="" alt=""></span>
+                        <strong class="tit">제품명제품명제품명제품명제품명</strong>
+                        <span class="txt">제품설명제품설명제품설명제품설명제품설명제품설명제품설명제품설명</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="storySection">
+            <div class="youtube">
+
+            </div>
+            <div class="story">
+                <h1 class="tit">배우 박지현의<br> 더마허브 촬영이야기</h1>
+                <p class="txt">이런 변화에 피부가 반응하는 건 당연한 현상이지만, 이런 증상이 가렵거나 따가운 증상으로 나아간다면 이야기는 달라집니다. 지루성 피부염으로 발전될 수 있기 때문이죠. 스트레스와 불규칙적인...</p>
+                <p class="link"><a href="#">자세히 보러가기</a></p>
+            </div>
+        </section>
+        <div class="mainBot">
+            <p class="sellers">
+                <a href="#">
+                    <strong class="tit">판매처</strong>
+                    <span><img src="" alt="네이버 스토어팜 메디스킨"></span>
                 </a>
-		    </li>
-		    <li>
-		        <a href="#">
-                    <b>[공지사항]</b>
-                    <span class="txt">2222222222222222222.</span>
-                    <span class="date">2017.02.16</span>
+            </p>
+            <section class="notice">
+                <h1 class="tit">공지사항</h1>
+                <ul>
+                    <li><a href="#">[신제품]주사라인 크림이 출시되었...</a></li>
+                    <li><a href="#">[공지] 더마허브 홈페이지가 새로워져..</a></li>
+                    <li><a href="#">[공지]더마허브 이벤트가 안내</a></li>
+                    <li><a href="#">더마허브 모델 박지현촬영스토리</a></li>
+                </ul>
+            </section>
+            <p class="brand">
+                <a href="#">
+                    <strong class="tit">브랜드</strong>
+                    <img src="" alt="">
                 </a>
-		    </li>
-		    <li>
-		        <a href="#">
-                    <b>[공지사항]</b>
-                    <span class="txt">333333333333333333.</span>
-                    <span class="date">2017.02.16</span>
-                </a>
-		    </li>
-		    <li>
-		        <a href="#">
-                    <b>[공지사항]</b>
-                    <span class="txt">4444444444444444.</span>
-                    <span class="date">2017.02.16</span>
-                </a>
-		    </li>
-		    <li>
-		        <a href="#">
-                    <b>[공지사항]</b>
-                    <span class="txt">55555555555555555555.</span>
-                    <span class="date">2017.02.16</span>
-                </a>
-		    </li>
-		    <li>
-		        <a href="#">
-                    <b>[공지사항]</b>
-                    <span class="txt">6666666666666666666666666.</span>
-                    <span class="date">2017.02.16</span>
-                </a>
-		    </li>
-		    <li>
-		        <a href="#">
-                    <b>[공지사항]</b>
-                    <span class="txt">777777777777777777777777777.</span>
-                    <span class="date">2017.02.16</span>
-                </a>
-		    </li>
-		    <li>
-		        <a href="#">
-                    <b>[공지사항]</b>
-                    <span class="txt">88888888888888888888888.</span>
-                    <span class="date">2017.02.16</span>
-                </a>
-		    </li>
-		</ul>
-		<div class="mainSlide2">
-			<ul>
-				<li>
-					<a href="#" style="background-image:url('images/img_main_slide2.jpg');">
-						<img src="images/img_main_slide2_mob.jpg" alt="" />
-					</a>
-				</li>
-				<li>
-					<a href="#" style="background-image:url('images/img_main_slide2.jpg');">
-						<img src="images/img_main_slide2_mob.jpg" alt="" />
-					</a>
-				</li>
-				<li>
-					<a href="#" style="background-image:url('images/img_main_slide2.jpg');">
-						<img src="images/img_main_slide2_mob.jpg" alt="" />
-					</a>
-				</li>
-			</ul>
-		</div>
-		<p class="mainRealStory">
-			<img src="images/img_main_realstory.jpg" alt="" class="imgPc" />
-			<img src="images/img_main_realstory_mob.jpg" alt="" class="imgMo" />
-		</p>
-		<section class="mainProgram">
-			<h1 class="mainTit">스킨룩스 PROGRAM</h1>
-			<p class="mainTxt">스킨룩스의 다양한 관리 프로그램을 선택하세요.</p>
-			<ul>
-				<li>
-					<a href="#">
-						<span class="thumb"><img src="images/img_main_program.jpg" alt="" /></span>
-						<b class="tit">스테로이드 부작용</b>
-						<span class="txt">나도모르게 스테로이드 중독???약물+피부관리+한약(맞춤)</span>
-						<span class="price">
-							<b>500,000</b>원 ~
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="thumb"><img src="images/img_main_program.jpg" alt="" /></span>
-						<b class="tit">스테로이드 부작용</b>
-						<span class="txt">나도모르게 스테로이드 중독???약물+피부관리+한약(맞춤)</span>
-						<span class="price">
-							<b>500,000</b>원 ~
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="thumb"><img src="images/img_main_program.jpg" alt="" /></span>
-						<b class="tit">스테로이드 부작용</b>
-						<span class="txt">나도모르게 스테로이드 중독???약물+피부관리+한약(맞춤)</span>
-						<span class="price">
-							<b>500,000</b>원 ~
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="thumb"><img src="images/img_main_program.jpg" alt="" /></span>
-						<b class="tit">스테로이드 부작용</b>
-						<span class="txt">나도모르게 스테로이드 중독???약물+피부관리+한약(맞춤)</span>
-						<span class="price">
-							<b>500,000</b>원 ~
-						</span>
-					</a>
-				</li>
-			</ul>
-		</section>
-		<section class="mainBeforeAfter">
-			<h1 class="mainTit">BEFORE &amp; AFTER</h1>
-			<p class="mainTxt">아래 사진을 클릭 하시면 치료 후 모습을 확인할 수 있습니다.</p>
-			<ul>
-				<li class="current">
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-				<li>
-					<img src="images/img_main_ba.jpg" alt="" />
-					<a href="#">
-						<img src="images/img_main_ba_on.jpg" alt="" />
-						<span>
-							<b>아토피</b>
-							자세히보기
-						</span>
-					</a>
-				</li>
-			</ul>
-		</section>
-		<div class="mainEtc">
-			<div class="content">
-				<nav class="link">
-					<a href="#" class="reserv1">상담/예약</a>
-					<a href="#" class="reserv2">상담/예약</a>
-					<a href="#" class="map">오시는 길</a>
-					<a href="#" class="info">병원소개</a>
-				</nav>
-				<p class="contact">전화상담 및 진료예약 <strong>02)547.0175</strong></p>
-				<section class="time">
-					<h1>진료시간 안내</h1>
-					<p>평일 : 10:30 ~ 20:00</p>
-					<p>토요일 : 10:00 ~ 15:00</p>
-					<p>점심시간 : 13:00 ~ 14:00(일/공휴일 휴진)</p>
-				</section>
-			</div>
-		</div>
-		<div class="mainBot">
-            <p class="star"><a href="#"><span>스킨룩스 스타방문</span></a></p>
-			<section class="selfChk">
-				<h1><span>비만자가진단</span></h1>
-				<p class="dataInput">
-					<label for="self1">나의 몸무게는?</label>
-					<span>
-						<input type="text" id="self1" class="txt" />
-						kg
-					</span>
-				</p>
-				<p class="dataInput">
-					<label for="self2">나의 키는?</label>
-					<span>
-						<input type="text" id="self2" class="txt" />
-						cm
-					</span>
-				</p>
-				<button class="btn">비만도 확인하기</button>
-				<p class="result">
-					<span>고도비만</span>
-					<span>28.96</span>
-				</p>
-			</section>
-			<section class="after">
-				<h1><a href="#">치료후기</a></h1>
-				<ul>
-					<li><a href="#">[이벤트]  다이어트 이벤트이어트 이벤트</a></li>
-					<li><a href="#">[이벤트] 등드름/피부 이벤트</a></li>
-					<li><a href="#">초상권동의 이벤트</a></li>
-					<li><a href="#">※치료 책임 보장제 </a></li>
-					<li><a href="#">[공지] 홈페이지 서버 증설 안내</a></li>
-					<li><a href="#">초상권동의 이벤트</a></li>
-					<li><a href="#">※치료 책임 보장제 </a></li>
-				</ul>
-			</section>
-			<section class="facebook">
-				<h1><span>스킨룩스 FACEBOOK</span></h1>
-				<div class="inner">
-					<img src="images/img_main_facebook.jpg" alt="" />
-				</div>
-			</section>
-		</div>
-	</div>
-	<footer id="footer">
-		<section>
-			<h1>SKINLUX</h1>
-			<nav>
-				<span class="privacy">
-					<a href="#">이용약관</a>
-					<a href="#">개인정보 취급방침</a>
-				</span>
-				<span class="sns">
-					<a href="#" class="facebook">페이스북</a>
-					<a href="#" class="naver">네이버블로그</a>
-					<a href="#" class="insta">인스타그램</a>
-					<a href="#" class="kakao">카카오톡</a>
-				</span>
-			</nav>
-			<p class="hospInfo">
-				<span>업체명 : 스킨룩스 한의원</span>
-				<span>대표이사 : 선우유정</span>
-				<span>서울시 강남구 논현로 826(신사동, 2층)</span>
-				<span>02-542-0175</span>
-				<span>fax : 02-547-6275</span>
-				<span>사업자 등록번호 : 4565121545212</span>
-				<span>통신판매업신고 : 41512124451</span>
-				<span>개인정보관리 책임자 : 선우유정 sdfsdf@sdfsdf.com</span>
-				<small>(c) SKINLUX all right reserved.</small>
-			</p>
-		</section>
-	</footer>
-	
-	<script type="text/javascript">
-	$(function(){
-		$('.mainSlide ul').bxSlider({
-			speed : 1000,
-			autoDelay : 3000,
-			auto: true,
-			autoControls: false,
-			controls: false
-		});
-		$('.mainSlide2 ul').bxSlider({
-			speed : 1000,
-			autoDelay : 3000,
-			auto: true,
-			autoControls: true
-		});
-        var winW = $(window).width();
-        function slideItem4() {
-            $('.mainProgram ul').bxSlider({
+            </p>
+            <section class="sns">
+                <h1 class="tit">SNS</h1>
+                <p class="txt">인스타그램/ 페이스북/<br>네이버블로그에서<br>더마허브 이야기를 들어보세요.</p>
+                <p class="link">
+                    <a href="#">인스타그램</a>
+                    <a href="#">페이스북</a>
+                    <a href="#">네이버블로그</a>
+                </p>
+            </section>
+        </div>
+        <script type="text/javascript">
+            $('.mainSlide ul').bxSlider({
+    			speed : 1000,
+    			autoDelay : 3000,
+    			auto: true,
+    			autoControls: false,
+    			controls: false
+    		});
+            $('.mainProdSlide ul').bxSlider({
                 minSlides: 4,
                 maxSlides: 4,
                 slideWidth: 5000,
@@ -551,63 +157,26 @@
                 autoControls: false,
                 pager: false
             });
-        }
-        function slideItem2() {
-            $('.mainProgram ul').bxSlider({
-                minSlides: 2,
-                maxSlides: 2,
-                slideWidth: 5000,
-                speed : 1000,
-                autoDelay : 3000,
-                auto: true,
-                autoControls: false,
-                pager: false
-            });
-            $('.mainBeforeAfter li:nth-of-type(6) ~ li').remove();
-        }
-        (winW > 767) ? slideItem4() : slideItem2();
-        (function notice(){
-            var firstList = $('.mainNotice li:first-child'),
-                listLeng = $('.mainNotice li').length,
-                listH = firstList.height(),
-                count = 0,
-                up = 0;
-            $('.mainNotice').append(firstList.clone());
-            setInterval(function(){
-                count++;
-                up = listH * count;
-                firstList.animate({'margin-top':'-'+up},300,function(){
-                    if (count == listLeng) {
-                        firstList.css('margin-top','0');
-                        count = 0;
-                    }
-                });
-            },5000);
-        })();
-		(function listAct(){
-			var setListTime;
-			function setListAct() {
-				var current = $('.mainBeforeAfter li.current');
-				if ($('.mainBeforeAfter li:last-child').hasClass('current')) {
-					$('.mainBeforeAfter li:first-child').addClass('current').siblings().removeClass('current');
-				} else {
-					current.next().addClass('current').siblings().removeClass('current');
-				}
-			}
-			setListTime = setInterval(function(){setListAct()},2000);
-
-			$('.mainBeforeAfter li > img').click(function(){
-				var $this = $(this);
-				clearInterval(setListTime);
-				$this.parent().addClass('current').siblings().removeClass('current');
-				setTimeout(function(){
-					setListTime = setInterval(function(){setListAct()},2000);
-				},3000);
-				
-			});
-		})();
-	})
-	</script>
+        </script>
+    </div>
+    <footer id="footer">
+        <div class="footWrap">
+            <p class="footInfo">
+                <span>업체명 : 메디스킨홀딩스</span>
+                <span>대표자명 : 선우유정</span>
+                <span>주소 : 서울특별시 강남구 논현로 159길 9, 401호(신사동,)</span>
+                <span>TEL : 02)542-0175</span>
+                <span>FAX : 02)547-6275</span><br>
+                <span>사업자등록번호 : 235-81-00599</span>
+                <span>개인정보보호책임자 : 선우유정</span>
+                <small>copyrights 2016 by mediskin. all Rights RESERVED</small>
+            </p>
+            <p class="footSns">
+                <a href="#" class="insta">인스타그램</a>
+                <a href="#" class="facebook">페이스북</a>
+            </p>
+        </div>
+    </footer>
 
 </body>
 </html>

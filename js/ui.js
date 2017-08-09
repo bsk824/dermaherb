@@ -1,48 +1,5 @@
 $(function() {
-	$.fn.gnb = function() {
-		var gnbWrap = $(this)
-			,depth1Menu = gnbWrap.find('.gnbMenu > ul > li > a')
-			,depth2 = gnbWrap.find('.depth2')
-			,menuBtn = $('.btnMobNav')
-			,menuClose = $('.btnClose');
 
-		menuBtn.on('click', function(){
-			$('body').addClass('menuOn');
-			gnbWrap.slideDown(300);
-		});
-		menuClose.on('click', function(){
-			$('body').removeClass('menuOn');
-			gnbWrap.slideUp(300);
-		});
-		depth1Menu.on({
-			'mouseenter' : function(){
-				if ($(window).width() > 1023) {
-					var $this = $(this);
-					$this.parent().siblings().removeClass('current').find('.depth2').stop().slideUp(200);
-					$this.next().stop().slideDown(200).parent().addClass('current');
-				}
-			},
-			'click' : function(){
-				var $this = $(this);
-				if ($(window).width() <= 1023) {
-					if (!$this.parent().hasClass('active')) {
-						depth2.slideUp(300);
-						$this.next().slideDown(300).parent().addClass('active').siblings().removeClass('active');
-					} else {
-						$this.next().slideUp(300).parent().removeClass('active');
-					}
-					if ($this.next().hasClass('depth2')) return false;
-				}
-			}
-		});
-		gnbWrap.on('mouseleave', function(){
-			if ($(window).width() > 1023) {
-				depth2.stop().slideUp(200).parent().removeClass('current');
-			}
-		});
-	}
-	$('#gnb').gnb();
-	
 	$(".datepicker").datepicker({
 		changeYear: true,
 		changeMonth: true,
@@ -56,39 +13,6 @@ $(function() {
 	});
 });
 
-function tabContent(obj) {
-	var $this = $(obj),
-		tabMenu = $this.find('a, button'),
-        tabBtn = $('.btnNav'),
-        winW = $(window).width();
-
-    tabBtn.on('click', function(){
-        var _this = $(this);
-        _this.toggleClass('active').next().slideToggle(200);
-    });
-	tabMenu.on('click',function(){
-		var _this = $(this);
-        _this.parent().addClass('active').siblings().removeClass('active');
-        if (_this.attr('href')) {
-            $(_this.attr('href')).addClass('active').siblings().removeClass('active');
-        }
-		if (tabBtn.length && winW < 767){
-            var txt = _this.text();
-            tabBtn.text(txt).removeClass('active');
-            $this.slideUp(200);
-        }
-		return false;
-	});
-}
-
-function activeField(obj) {
-	var $this = $(obj)
-		field = $this.parent().find('fieldset');
-	if ($this.find('input[type="radio"]').prop('checked',true)) {
-		field.removeClass('disable');
-		$this.parent().siblings().find('fieldset').addClass('disable');
-	}
-}
 
 var winW = $(window).width();
 function fontSize(w) {
@@ -98,7 +22,7 @@ function fontSize(w) {
 	} else {
 		$('html').css('font-size','62.5%');
 	}
-	
+
 }
 fontSize(winW);
 $(window).resize(function(){
