@@ -85,6 +85,7 @@ textarea, input.txt {padding:7px 5px;border:1px solid #dbdbdb;resize:none;}
 .ui-datepicker-trigger {width:19px;height:19px;margin:0 0 0 5px;background:url(../images/btn_cal.gif) no-repeat;font:0/0 a!important;}
 
 @media all and (max-width:1023px) {
+    html {font-size:62.5%;}
 	body, input, select, textarea, button {font-size:1.4rem;}
 	select {height:3rem;}
 	textarea, input.txt {height:3rem;padding:.6rem .5rem;border-width:.1rem;border-radius:0;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;}

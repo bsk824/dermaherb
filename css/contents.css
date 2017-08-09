@@ -23,7 +23,7 @@
 .storySection {width:1200px;height:460px;margin:55px auto 0;background:#f8f8f8;}
 .storySection:after {content:"";display:block;clear:both;}
 .storySection .youtube {float:left;width:636px;height:356px;padding:52px 45px;}
-.storySection .story {float:right;width:440px;padding:65px 0 0;}
+.storySection .story {float:left;width:440px;padding:65px 0 0;}
 .storySection .story .tit {font-size:40px;color:#2a2a2a;font-weight:normal;line-height:1.2;}
 .storySection .story .txt {margin:30px 0 50px;font-size:20px;color:#737373;}
 .storySection .story .link a {font-size:18px;color:#282828;font-weight:bold;}
@@ -31,11 +31,11 @@
 .mainBot {width:1200px;margin:0 auto;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;}
 .mainBot:after {content:"";display:block;clear:both;}
 .mainBot > * {float:left;width:299px;height:268px;border-right:1px solid #e1e1e1;}
-.mainBot .tit {display:block;padding-top:45px;text-align:center;font-size:26px;line-height:1;font-weight:normal;}
+.mainBot .tit {display:block;padding-top:45px;text-align:center;font-size:26px;line-height:1;}
 
 .mainBot .sellers {width:298px;border-left:1px solid #e1e1e1;}
 .mainBot .notice ul {margin:25px 30px;}
 .mainBot .notice li {font-size:16px;color:#696969;}
 .mainBot .notice li a {display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
 .mainBot .sns {text-align:center;}
-.mainBot .sns .txt {font-size:16px;color:#242424;}
+.mainBot .sns .txt {font-size:16px;color:#242424;font-weight:bold;}
