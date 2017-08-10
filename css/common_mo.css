@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 #header .headerWrap {width:auto;height:8rem;padding:0 1rem;}
-#header h1 {height:8rem;line-height:8rem;}
+#header h1 a {line-height:8rem;}
 #header nav {top:3rem;right:1rem;}
 #header nav > ul > li {margin-left:6rem;}
 #header nav > ul > li > a {font-size:2rem;}
@@ -34,11 +34,13 @@
     #header nav > ul > li li a:before {content:"-";display:inline-block;margin-right:.5rem;vertical-align:0;}
 }
 @media all and (max-width:767px) {
+    #header h1 a img {width:20rem;}
     #header nav {width:80%;}
 }
 @media all and (max-width:560px) {
     #header .headerWrap {height:4rem;}
-    #header h1 {height:4rem;line-height:4rem;}
+    #header h1 a {height:4rem;line-height:0;}
+    #header h1 a img {width:15rem;}
     #header .btnMenu {top:.7rem;right:1rem;width:3rem;height:2.6rem;background:#282828;}
     #header .btnMenu:before,
     #header .btnMenu:after {top:.5rem;left:0;right:0;height:.2rem;background:#fff;}
@@ -51,15 +53,18 @@
 
     #header nav {padding-top:4rem;}
     #header nav > ul > li a {padding:1rem 1.5rem 1.5rem;font-size:1.6rem;}
-
 }
 
 #footer .footWrap {position:relative;width:auto;height:auto;padding:2rem 1.5rem;}
+#footer .footWrap h1 {padding:0 0 1rem;line-height:0;}
+#footer .footWrap h1 img {width:20rem;}
 #footer .footInfo {padding:0;letter-spacing:-.1rem;}
 #footer .footInfo span {margin-right:1rem;font-size:1.1rem;}
 #footer .footInfo small {font-size:1.1rem;}
 #footer .footSns {top:auto;right:1.5rem;bottom:.5rem;}
-#footer .footSns a {width:5rem;height:5rem;margin-left:1rem;}
+#footer .footSns a {width:4rem;margin-left:1rem;}
+#footer .footSns a img {width:100%;}
 @media all and (max-width:767px) {
     #footer .footSns {display:none;}
+    #footer .footWrap h1 img {width:15rem;}
 }

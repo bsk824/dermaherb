@@ -1,22 +1,25 @@
 @charset "utf-8";
 
 #header .headerWrap {position:relative;width:1200px;height:80px;margin:0 auto;font-family:'맑은 고딕';z-index:100;}
-#header h1 {height:80px;line-height:80px;}
+#header h1 a {display:inline-block;line-height:80px;}
+#header h1 a img {vertical-align:middle;}
 #header nav {position:absolute;top:30px;right:0;}
 #header nav > ul > li {position:relative;float:left;margin-left:85px;}
 #header nav > ul > li > a {color:#0c1c24;font-size:20px;line-height:1;}
 #header nav > ul > li.current > a {color:#10aca1;}
-#header nav > ul > li > ul {display:none;position:absolute;top:40px;left:-40px;padding:5px 0;background:#fff;box-shadow:0 0 5px 1px rgba(0, 0, 0, 0.1);text-align:center;}
+#header nav > ul > li > ul {display:none;position:absolute;width:200px;top:50px;left:-60px;padding:5px 0;background:#fff;box-shadow:0 0 5px 1px rgba(0, 0, 0, 0.1);text-align:center;}
 #header nav > ul > li li a {display:block;padding:0 30px;font-size:14px;line-height:2;color:#000;text-align:center;}
 #header nav > ul > li li a:hover {color:#10aca1;}
 #header .btnMenu,
 #header .btnCloseMenu {display:none;}
 
 #footer {background:#232323;font-family:'맑은 고딕';}
-#footer .footWrap {position:relative;width:1200px;height:150px;}
-#footer .footInfo {padding:45px 0 0 172px;color:#6e6e6e;letter-spacing:-1px;}
+#footer .footWrap {position:relative;width:1200px;height:150px;margin:0 auto;}
+#footer .footWrap h1 {padding:25px 0 10px;line-height:0;}
+#footer .footWrap h1 img {width:200px;}
+#footer .footInfo {color:#6e6e6e;letter-spacing:-1px;}
 #footer .footInfo span {display:inline-block;margin-right:15px;font-size:13px;}
 #footer .footInfo small {display:block;font-size:13px;}
 #footer .footSns {position:absolute;top:45px;right:0;font-size:0;}
-#footer .footSns a {display:inline-block;width:50px;height:50px;margin-left:10px;background:#fff;border-radius:50%;font:0/0 a!important;}
-#footer .footSns a:before {content:"";display:block;}
+#footer .footSns a {display:inline-block;width:50px;margin-left:10px;background:#fff;border-radius:50%;font:0/0 a!important;}
+#footer .footSns a img {width:100%;}

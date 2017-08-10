@@ -1,44 +1,63 @@
 @charset "utf-8";
 
-.mainSlide li {height:30rem;}
+.mainSlide li a {height:40rem;background-size:auto 130% !important;}
 .mainSlide .bx-pager {bottom:2rem;}
 .mainSlide .bx-pager button {width:1.6rem;height:1.6rem;margin:0 .3rem;border-radius:.8rem;}
 .mainSlide .bx-pager button.active {width:2.4rem;border-width:.2rem;}
+@media all and (max-width:1024px) {
+    .mainSlide li a {height:30rem;}
+}
+@media all and (max-width:767px) {
+    .mainSlide li a {height:auto;}
+    .mainSlide li a img {display:block;width:100%;}
+}
 
-.mainProdSlide {width:auto;padding:0 5rem;box-sizing:border-box;}
+.mainProdSlide {width:auto;margin:6.5rem 0 0;padding:0 5rem;box-sizing:border-box;}
 .mainProdSlide li a {height:auto;margin:0 0 1.5rem;border-width:.4rem;}
 .mainProdSlide li .tit,
 .mainProdSlide li .txt {margin:0 1.5rem;}
-.mainProdSlide .bx-controls-direction button {width:2.5rem;height:4.6rem;margin-top:-2.3rem;}
-.mainProdSlide .bx-controls-direction button:first-child {left:0;}
+.mainProdSlide .bx-controls-direction button {width:2.5rem;height:4.6rem;right:1rem;margin-top:-2.3rem;}
+.mainProdSlide .bx-controls-direction button:first-child {left:1rem;}
+@media all and (max-width:1024px) {
+    .mainProdSlide {margin:3rem 0 0;}
+}
 @media all and (max-width:767px) {
     .mainProdSlide {padding:0 2rem;}
     .mainProdSlide .bx-controls-direction {display:none;}
 }
 
-.storySection {width:auto;height:auto;margin:0;background:#f8f8f8;}
+.storySection {width:auto;height:auto;margin:5.5rem 0 0;padding:2rem;background:#f8f8f8;}
 .storySection:after {content:"";display:block;clear:both;}
-.storySection .youtube {float:left;width:50%;height:auto;padding:0;}
-.storySection .story {float:left;width:50%;padding:0;}
-.storySection .story .tit {font-size:4rem;}
-.storySection .story .txt {margin:3rem 0 5rem;font-size:2rem;}
-.storySection .story .link a {font-size:1.8rem;}
+.storySection .youtube {width:50%;height:auto;margin:0;}
+.storySection .youtube:after {content:"";display:block;padding-top:60%;}
+.storySection .story {width:50%;padding:0 2rem;box-sizing:border-box;}
+.storySection .story .tit {font-size:2.4rem;}
+.storySection .story .txt {margin:2rem 0;font-size:1.8rem;}
+.storySection .story .link a {font-size:1.4rem;}
+@media all and (max-width:1024px) {
+    .storySection {margin:2.5rem 0 0;}
+}
 @media all and (max-width:767px) {
     .storySection .youtube {float:none;width:auto;}
-    .storySection .story {float:none;width:auto;padding:1rem;}
+    .storySection .story {float:none;width:auto;padding:1rem 0 0;}
     .storySection .story .tit {font-size:1.8rem;}
     .storySection .story .txt {margin:1rem 0;font-size:1.4rem;}
     .storySection .story .link a {font-size:1.2rem;}
-
 }
 
 .mainBot {width:auto;border-width:.1rem;}
 .mainBot > * {float:left;width:25%;height:25rem;border-width:.1rem;box-sizing:border-box;}
 .mainBot .tit {padding-top:4.5rem;font-size:2.6rem;}
 .mainBot .sellers {width:25%;border-width:.1rem;}
+.mainBot .sellers a {display:block;width:auto;margin:0 1.5rem;font-size:1.6rem;}
+.mainBot .sellers a span {margin:3rem 0 .5rem;}
 .mainBot .notice ul {margin:2.5rem 3rem;}
 .mainBot .notice li {font-size:1.6rem;}
-.mainBot .sns .txt {margin:1rem 0;font-size:1.6rem;}
+.mainBot .brand a {margin:1.5rem 1.5rem 0;}
+.mainBot .brand a img {width:100%;}
+.mainBot .sns .txt {margin:1rem 0 .5rem;font-size:1.6rem;}
+.mainBot .sns .link a {display:inline-block;width:4rem;font:0/0 a!important;}
+.mainBot .sns .link a img {width:100%;}
 @media all and (max-width:1024px) {
     .mainBot > * {height:18rem;}
     .mainBot .tit {padding-top:2rem;font-size:1.6rem;}
@@ -52,10 +71,13 @@
     .mainBot .tit {width:35%;padding:0;font-size:1.4rem;}
     .mainBot .tit .dir {display:inline;}
     .mainBot .sellers {width:100%;border:0;}
-    .mainBot .sellers a {width:65%;text-align:center;}
+    .mainBot .sellers a {width:65%;text-align:center;line-height:0;}
+    .mainBot .sellers a span {display:none;}
+    .mainBot .sellers a img {width:10rem;}
     .mainBot .notice ul {width:65%;overflow:hidden;height:1.8rem;margin:0;}
     .mainBot .notice li {font-size:1.2rem;}
     .mainBot .sns .link {width:65%;}
+    .mainBot .sns .link a {width:3rem;line-height:0;}
     .mainBot .sellers span,
     .mainBot .brand,
     .mainBot .sns .txt {display:none;}
