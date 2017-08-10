@@ -9,7 +9,7 @@
 
 .mainProdSlide {position:relative;width:1000px;margin:0 auto;padding:0 100px;}
 .mainProdSlide li {float:left;text-align:center;}
-.mainProdSlide li a {display:block;height:336px;border:8px solid #fff;}
+.mainProdSlide li a {display:block;padding:0 0 15px;border:8px solid #fff;}
 .mainProdSlide li a:hover {border-color:#f2f2f2;}
 .mainProdSlide li .img {display:block;position:relative;}
 .mainProdSlide li .img:before {content:"";display:block;padding-top:105%;}
@@ -17,7 +17,7 @@
 .mainProdSlide li .tit,
 .mainProdSlide li .txt {display:block;margin:0 15px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
 .mainProdSlide .bx-controls-direction {position:absolute;top:50%;left:0;right:0;}
-.mainProdSlide .bx-controls-direction button {position:absolute;right:0;width:25px;height:46px;margin-top:-23px;}
+.mainProdSlide .bx-controls-direction button {position:absolute;right:0;width:25px;height:46px;margin-top:-23px;font:0/0 a!important;}
 .mainProdSlide .bx-controls-direction button:first-child {left:0;}
 
 .storySection {width:1200px;height:460px;margin:55px auto 0;background:#f8f8f8;}
@@ -32,10 +32,11 @@
 .mainBot:after {content:"";display:block;clear:both;}
 .mainBot > * {float:left;width:299px;height:268px;border-right:1px solid #e1e1e1;}
 .mainBot .tit {display:block;padding-top:45px;text-align:center;font-size:26px;line-height:1;}
+.mainBot .tit .dir {display:none;}
 
 .mainBot .sellers {width:298px;border-left:1px solid #e1e1e1;}
 .mainBot .notice ul {margin:25px 30px;}
 .mainBot .notice li {font-size:16px;color:#696969;}
-.mainBot .notice li a {display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.mainBot .notice li a {display:inline-block;max-width:100%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
 .mainBot .sns {text-align:center;}
-.mainBot .sns .txt {font-size:16px;color:#242424;font-weight:bold;}
+.mainBot .sns .txt {margin:10px 0;font-size:16px;color:#242424;font-weight:bold;}

@@ -89,7 +89,6 @@ textarea, input.txt {padding:7px 5px;border:1px solid #dbdbdb;resize:none;}
 	body, input, select, textarea, button {font-size:1.4rem;}
 	select {height:3rem;}
 	textarea, input.txt {height:3rem;padding:.6rem .5rem;border-width:.1rem;border-radius:0;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
-	input.txt:focus, textarea:focus {border-width:.1rem;}
 
 	.chk + .chk {margin:0 0 0 .5rem;}
 	.chk input + span:before {width:2.2rem;height:2.2rem;margin:0 1rem 0 0;background-position:0 -2.6rem;background-size:50rem;}

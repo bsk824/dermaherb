@@ -1,19 +1,3 @@
-$(function() {
-
-	$(".datepicker").datepicker({
-		changeYear: true,
-		changeMonth: true,
-		showMonthAfterYear: true,
-		yearSuffix: "년",
-		prevText: "이전달",
-		nextText: "다음달",
-		dateFormat: "yy / mm / dd",
-		dayNamesMin: ["일","월","화","수","목","금","토"],
-		monthNamesShort: ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]
-	});
-});
-
-
 var winW = $(window).width();
 function fontSize(w) {
 	if (w <= 560) {
@@ -75,4 +59,66 @@ browserCheck();
 
 $('#version').on('click','.versionClose',function(){
 	$('#version').hide();
+});
+
+$(function() {
+
+	$.fn.gnb = function() {
+		var header = $('#header'),
+			btnMenu = header.find('.btnMenu'),
+			btnCloseMenu = header.find('.btnCloseMenu'),
+			gnb = header.find('nav'),
+			menu = gnb.find('> ul > li > a'),
+			subMenu = menu.parent().find('ul');
+
+		menu.on({
+			'mouseenter' : function() {
+				if ($(window).width() > 900) {
+					var $this = $(this);
+					$this.parent().addClass('current').siblings().removeClass('current');
+					subMenu.stop().fadeOut();
+					if ($this.parent().has('ul').length) {
+						$this.next().stop().fadeIn();
+					}
+				}
+			},
+			'click' : function() {
+				if ($(window).width() <= 900) {
+					var $this = $(this);
+					$this.parent().addClass('current').siblings().removeClass('current');
+					subMenu.stop().slideUp();
+					if ($this.parent().has('ul').length) {
+						$this.next().stop().slideDown();
+					}
+				}
+			}
+		});
+		header.on('mouseleave', function(){
+			if ($(window).width() > 900){
+				menu.parent().removeClass('current');
+				subMenu.stop().fadeOut();
+			}
+		});
+		btnMenu.on('click', function(){
+			header.addClass('menuOn');
+			gnb.slideDown();
+		});
+		btnCloseMenu.on('click', function(){
+			header.removeClass('menuOn');
+			gnb.slideUp();
+		});
+	}
+	$('#header').gnb();
+
+	$(".datepicker").datepicker({
+		changeYear: true,
+		changeMonth: true,
+		showMonthAfterYear: true,
+		yearSuffix: "년",
+		prevText: "이전달",
+		nextText: "다음달",
+		dateFormat: "yy / mm / dd",
+		dayNamesMin: ["일","월","화","수","목","금","토"],
+		monthNamesShort: ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]
+	});
 });
