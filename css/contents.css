@@ -68,3 +68,16 @@
 .prodTabs li li {display:inline-block;float:none;}
 .prodTabs li li a {display:inline-block;padding:0 15px;line-height:78px;color:#7b7b7b;font-size:18px;}
 .prodTabs li li.active a {position:relative;margin-bottom:-2px;line-height:76px;color:#000;border-bottom:2px solid #000;}
+
+.prodList ul {margin:0 -22px;}
+.prodList ul:after {content:"";display:block;clear:both;}
+.prodList ul li {float:left;width:25%;text-align:center;}
+.prodList ul li span {display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.prodList ul li > span {padding:0 22px;}
+.prodList ul li .img {position:relative;}
+.prodList ul li .img:after {content:"";display:block;padding-top:90%;}
+.prodList ul li .img img {position:absolute;top:0;left:0;width:100%;height:100%;}
+.prodList ul li .btn a {float:left;width:50%;background:#7dbdc4;border:1px solid #7dbdc4;color:#fff;line-height:35px;}
+.prodList ul li .btn a:first-child {background:#fff;border-color:#c3c3c3;color:#707070;}
+.prodList ul li .tit {color:#1a1a1a;font-size:20px;}
+.prodList ul li .txt {color:#8f8f8f;font-size:18px;}
