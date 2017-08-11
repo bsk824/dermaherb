@@ -52,7 +52,7 @@
     #header .btnCloseMenu:after {height:.2rem;}
 
     #header nav {padding-top:4rem;}
-    #header nav > ul > li a {font-size:1.6rem;}
+    #header nav > ul > li a {padding:1rem 1.5rem;font-size:1.6rem;}
 }
 @media all and (max-width:767px) {
     .pageTop {background-size:cover;height:10rem;}
