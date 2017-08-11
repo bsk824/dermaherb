@@ -28,7 +28,7 @@
     #header nav > ul {position:relative;background:#fff;z-index:2;}
     #header nav > ul > li {float:none;margin-left:0;border-top:.1rem solid #cfcfcf;}
     #header nav > ul > li.current > a {background:#b5d471;color:#fff;}
-    #header nav > ul > li a {display:block;padding:1rem 4rem .5rem;}
+    #header nav > ul > li a {display:block;padding:1rem 4rem;}
     #header nav > ul > li > ul {position:static;display:none;box-shadow:none;border-top:.1rem solid #cfcfcf;}
     #header nav > ul > li li a {text-align:left;}
     #header nav > ul > li li a:before {content:"-";display:inline-block;margin-right:.5rem;vertical-align:0;}
@@ -52,7 +52,7 @@
     #header .btnCloseMenu:after {height:.2rem;}
 
     #header nav {padding-top:4rem;}
-    #header nav > ul > li a {padding:1rem 1.5rem 1.5rem;font-size:1.6rem;}
+    #header nav > ul > li a {font-size:1.6rem;}
 }
 @media all and (max-width:767px) {
     .pageTop {background-size:cover;height:10rem;}
