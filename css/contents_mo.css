@@ -89,3 +89,15 @@
     .mainBot .brand,
     .mainBot .sns .txt {display:none;}
 }
+
+.contactTxt {margin:3rem 0 2.5rem;font-size:1.8rem;}
+.contactAgree {margin:1rem 0 0;font-size:1.5rem;}
+@media all and (max-width:1024px) {
+
+    .contactTxt {margin:3rem 0 2.5rem;font-size:1.6rem;}
+    .contactAgree {margin:1rem 0 0;font-size:1.4rem;}
+}
+@media all and (max-width:767px) {
+    .contactTxt {font-size:1.4rem;}
+    .contactAgree {font-size:1.1rem;}
+}
