@@ -55,4 +55,16 @@
 .contactTxt {margin:30px 0 25px;color:#7a7a7a;font-size:18px;text-align:center;}
 .contactAgree {margin:10px 0 0;color:#262626;font-size:15px;text-align:center;}
 
-.prodTabs {}
+.prodTabs {margin:45px 0 0;}
+.prodTabs ul {position:relative;}
+.prodTabs ul:after {content:"";display:block;clear:both;}
+.prodTabs li {float:left;}
+.prodTabs > ul > li {width:50%;border-bottom:2px solid #666;}
+.prodTabs > ul > li > a {display:block;border-top:1px solid #e5e5e5;border-right:1px solid #e5e5e5;line-height:47px;font-size:18px;color:#919191;text-align:center;}
+.prodTabs > ul > li:first-child > a {border-right:0;border-left:1px solid #e5e5e5;}
+.prodTabs > ul > li.current > a {background:#666;border-color:#666;color:#fff;}
+.prodTabs li ul {position:absolute;left:0;right:0;background:#fff;border-bottom:1px solid #e5e5e5;text-align:center;}
+.prodTabs li.current ul {z-index:2;}
+.prodTabs li li {display:inline-block;float:none;}
+.prodTabs li li a {display:inline-block;padding:0 15px;line-height:78px;color:#7b7b7b;font-size:18px;}
+.prodTabs li li.active a {position:relative;margin-bottom:-2px;line-height:76px;color:#000;border-bottom:2px solid #000;}
