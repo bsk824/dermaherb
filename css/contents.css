@@ -51,3 +51,8 @@
 .mainBot .sns .link {line-height:0;}
 .mainBot .sns .link a {display:inline-block;width:58px;font:0/0 a!important;}
 .mainBot .sns .link a img {width:100%;}
+
+.contactTxt {margin:30px 0 25px;color:#7a7a7a;font-size:18px;text-align:center;}
+.contactAgree {margin:10px 0 0;color:#262626;font-size:15px;text-align:center;}
+
+.prodTabs {}
