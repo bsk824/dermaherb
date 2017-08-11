@@ -16,13 +16,20 @@
 .mainProdSlide li a {height:auto;margin:0 0 1.5rem;border-width:.4rem;}
 .mainProdSlide li .tit,
 .mainProdSlide li .txt {margin:0 1.5rem;}
+.mainProdSlide li .tit {font-size:2rem;}
+.mainProdSlide li .txt {font-size:1.8rem;}
 .mainProdSlide .bx-controls-direction button {width:2.5rem;height:4.6rem;right:1rem;margin-top:-2.3rem;}
 .mainProdSlide .bx-controls-direction button:first-child {left:1rem;}
 @media all and (max-width:1024px) {
     .mainProdSlide {margin:3rem 0 0;}
 }
 @media all and (max-width:767px) {
-    .mainProdSlide {padding:0 2rem;}
+    .mainProdSlide {padding:0;}
+    .mainProdSlide:after {content:"";display:block;clear:both;}
+    .mainProdSlide li {float:left;width:50%;padding:0 .5rem;box-sizing:border-box;}
+    .mainProdSlide li a {height:auto;margin:0 0 1rem;border:.2rem solid #f2f2f2;}
+    .mainProdSlide li .tit {font-size:1.4rem;}
+    .mainProdSlide li .txt {font-size:1.2rem;}
     .mainProdSlide .bx-controls-direction {display:none;}
 }
 
