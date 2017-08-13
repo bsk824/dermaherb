@@ -102,7 +102,17 @@
     .contactAgree {font-size:1.1rem;}
 }
 
-
-.prodList ul {margin:0;}.prodList ul li > span {padding:0 2.2rem;}.prodList ul li .btn a {width:50%;box-sizing:border-box;line-height:3.5rem;}.prodList ul li .tit {font-size:2rem;}.prodList ul li .txt {font-size:1.8rem;}
-@media all and (max-width:1023px) {  .prodList ul li {width:50%;}  .prodList ul li > span {padding:0 2.2rem;}}
-@media all and (max-width:767px) {  .prodList ul li > span {padding:0 1rem;}  .prodList ul li .tit {font-size:1.4rem;}  .prodList ul li .txt {font-size:1.2rem;}}
+.prodList ul {margin:0;}
+.prodList ul li > span {padding:0 2.2rem;}
+.prodList ul li .btn a {width:50%;box-sizing:border-box;line-height:3.5rem;}
+.prodList ul li .tit {font-size:2rem;}
+.prodList ul li .txt {font-size:1.8rem;}
+@media all and (max-width:1023px) {
+    .prodList ul li {width:50%;} 
+    .prodList ul li > span {padding:0 2.2rem;}
+}
+@media all and (max-width:767px) { 
+    .prodList ul li > span {padding:0 1rem;} 
+    .prodList ul li .tit {font-size:1.4rem;}
+    .prodList ul li .txt {font-size:1.2rem;}
+}
