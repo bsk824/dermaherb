@@ -49,7 +49,7 @@
             </nav>
         </div>
     </header>
-    <section id="container">
+    <section id="container" class="prod">
         <div class="pageTop">
             <h1><span>제품소개</span></h1>
         </div>
@@ -58,23 +58,23 @@
                 <ul>
                     <li class="current"><a href="#">주사라인 마스크팩</a>
                         <ul>
-                            <li><a href="#">백옥마스크</a></li>
-                            <li class="active"><a href="#">태반마스크</a></li>
-                            <li><a href="#">슈퍼신데렐라 마스크</a></li>
-                            <li><a href="#">베이비페이스 마스크</a></li>
-                            <li><a href="#">물광 하이드로겔 마스크</a></li>
+                            <li><a href="#prodDetail1">백옥마스크</a></li>
+                            <li><a href="#prodDetail2">태반마스크</a></li>
+                            <li><a href="#prodDetail3">슈퍼신데렐라 마스크</a></li>
+                            <li><a href="#prodDetail4">베이비페이스 마스크</a></li>
+                            <li><a href="#prodDetail5">물광 하이드로겔 마스크</a></li>
                         </ul>
                     </li>
                     <li><a href="#">스킨케어</a>
                         <ul>
-                            <li><a href="#">EGF 허브톡스 세럼</a></li>
-                            <li><a href="#">셀화이트닝 비비</a></li>
+                            <li><a href="#prodDetail6">EGF 허브톡스 세럼</a></li>
+                            <li><a href="#prodDetail7">셀화이트닝 비비</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
-            <section>
-                <h1>주사라인 마스크팩 &gt; 백옥마스크</h1>
+            <section class="detailSection">
+
             </section>
         </div>
     </section>
@@ -97,6 +97,57 @@
             </p>
         </div>
     </footer>
+    <script>
+    $(function(){
+        var menu = $('.prodTabs > ul > li > a'),
+            subMenu = $('.prodTabs ul ul a');
+
+        menu.on('click',function(){
+            var $this = $(this);
+            $this.parent().addClass('current').siblings().removeClass('current');
+            return false;
+        });
+        if (window.location.href.indexOf('#') > -1) {
+    		var href = window.location.href;
+    		page = href.split('#')[1];
+
+    		var $this = $('.prodTabs ul ul [href="#' + page + '"]');
+            subMenu.parent().removeClass('active');
+    		$this.parent().addClass('active');
+            $this.closest('ul').parent().addClass('current').siblings().removeClass('current');
+
+    		$.ajax({
+    			url : page+'.html',
+    			dataType: 'html',
+    			success : function(data){
+                    $('.detailSection').html(data);
+    			}
+    		});
+    	}
+
+    	function pageLoad(page){
+    		$.ajax({
+    			url : page+'.html',
+    			dataType: 'html',
+    			success : function(data){
+                    $('.detailSection').html(data);
+    			}
+    		});
+    	}
+
+    	window.onhashchange = function(e){
+    		var href = window.location.href;
+    		page = href.split('#')[1];
+
+    		var $this = $('.prodTabs ul ul [href="#' + page + '"]');
+            subMenu.parent().removeClass('active');
+    		$this.parent().addClass('active');
+            $this.closest('ul').parent().addClass('current').siblings().removeClass('current');
+
+    		pageLoad(page);
+    	}
+    })
+    </script>
 
 </body>
 </html>

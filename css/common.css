@@ -16,6 +16,8 @@
 
 .pageTop {position:relative;height:220px;background:url(../images/img_sub_visual1.jpg) no-repeat 50% 50%;overflow:hidden;}
 .brand .pageTop {background-image:url(../images/img_sub_visual2.jpg);}
+.prod .pageTop {background-image:url(../images/img_sub_visual3.jpg);}
+.notice .pageTop {background-image:url(../images/img_sub_visual4.jpg);}
 .pageTop h1 {position:absolute;left:50%;bottom:-20px;width:300px;height:130px;margin-left:-150px;text-align:center;}
 .pageTop h1:before,
 .pageTop h1:after {content:"";position:absolute;top:0;right:0;bottom:0;left:0;}
@@ -26,6 +28,7 @@
 .contents {width:1100px;margin:0 auto;padding:0 50px;}
 
 #footer {margin:100px 0 0;background:#232323;font-family:'맑은 고딕';}
+.main + #footer {margin:0;}
 #footer .footWrap {position:relative;width:1200px;height:150px;margin:0 auto;}
 #footer .footWrap h1 {padding:25px 0 10px;line-height:0;}
 #footer .footWrap h1 img {width:200px;}
@@ -137,7 +140,7 @@
 [class*="btnType"] {display:inline-block;border:1px solid transparent;text-align:center;}
 [class*="btnType"]:before {content:"";background:url('../images/icon_pack.png') no-repeat;}
 .btnType1 {line-height:28px;background:#fff;padding:0 10px;border-color:#aaa;color:#262626;}
-.btnType2 {line-height:38px;background:#eaeaea;border-color:#dbdbdb;color:#4c4c4c;font-size:12px;}
+.btnType2 {line-height:60px;background:#fff;padding:0 30px;border:2px solid #000;color:#363636;font-size:24px;}
 .btnType3 {line-height:18px;background:#bcbcbc;border-color:#9c9c9c;border-radius:2px;color:#fff;font-size:11px;}
 .btnType4 {line-height:48px;padding:0 55px;background:#fff;border-color:#cbcbcb;border-radius:1px;color:#535353;font-size:22px;}
 .btnType5 {line-height:48px;padding:0 55px;background:#10aca1;border-color:#10aca1;border-radius:1px;color:#fff;font-size:22px;}

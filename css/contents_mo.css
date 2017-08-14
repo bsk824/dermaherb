@@ -93,7 +93,6 @@
 .contactTxt {margin:3rem 0 2.5rem;font-size:1.8rem;}
 .contactAgree {margin:1rem 0 0;font-size:1.5rem;}
 @media all and (max-width:1024px) {
-
     .contactTxt {margin:3rem 0 2.5rem;font-size:1.6rem;}
     .contactAgree {margin:1rem 0 0;font-size:1.4rem;}
 }
@@ -102,17 +101,30 @@
     .contactAgree {font-size:1.1rem;}
 }
 
+.prodTabs {margin:4.5rem 0 17rem;}
+.prodTabs > ul > li {border-width:.2rem;}
+.prodTabs > ul > li > a {border-width:.1rem;line-height:4.7rem;font-size:1.8rem;}
+.prodTabs > ul > li:first-child > a {border-width:.1rem;}
+.prodTabs li ul {border-width:.1rem;}
+.prodTabs li li a {padding:0 1.5rem;line-height:7.8rem;font-size:1.8rem;}
+.prodTabs li li.active a {position:relative;margin-bottom:-2px;line-height:76px;color:#000;border-bottom:2px solid #000;font-weight:bold;}
+
 .prodList ul {margin:0;}
+.prodList ul li {margin:5rem 0 0;}
 .prodList ul li > span {padding:0 2.2rem;}
 .prodList ul li .btn a {width:50%;box-sizing:border-box;line-height:3.5rem;}
-.prodList ul li .tit {font-size:2rem;}
+.prodList ul li .tit {margin:1rem 0 0;font-size:2rem;}
 .prodList ul li .txt {font-size:1.8rem;}
-@media all and (max-width:1023px) {
+@media all and (max-width:1024px) {
     .prodList ul li {width:50%;} 
     .prodList ul li > span {padding:0 2.2rem;}
 }
-@media all and (max-width:767px) { 
+@media all and (max-width:767px) {
     .prodList ul li > span {padding:0 1rem;} 
     .prodList ul li .tit {font-size:1.4rem;}
     .prodList ul li .txt {font-size:1.2rem;}
+}
+@media all and (max-width:560px) {
+    .prodList ul li {margin:2rem 0 0;}
+    .prodList ul li > span {padding:0 .5rem;} 
 }

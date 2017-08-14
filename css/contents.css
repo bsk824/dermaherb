@@ -151,7 +151,7 @@
 .contactTxt {margin:30px 0 25px;color:#7a7a7a;font-size:18px;text-align:center;}
 .contactAgree {margin:10px 0 0;color:#262626;font-size:15px;text-align:center;}
 
-.prodTabs {margin:45px 0 0;}
+.prodTabs {margin:45px 0 170px;}
 .prodTabs ul {position:relative;}
 .prodTabs ul:after {content:"";display:block;clear:both;}
 .prodTabs li {float:left;}
@@ -163,7 +163,7 @@
 .prodTabs li.current ul {z-index:2;}
 .prodTabs li li {display:inline-block;float:none;}
 .prodTabs li li a {display:inline-block;padding:0 15px;line-height:78px;color:#7b7b7b;font-size:18px;}
-.prodTabs li li.active a {position:relative;margin-bottom:-2px;line-height:76px;color:#000;border-bottom:2px solid #000;}
+.prodTabs li li.active a {position:relative;margin-bottom:-2px;line-height:76px;color:#000;border-bottom:2px solid #000;font-weight:bold;}
 
 .prodList ul {margin:0 -22px;}
 .prodList ul:after {content:"";display:block;clear:both;}
@@ -178,3 +178,6 @@
 .prodList ul li .btn a:first-child {background:#fff;border-color:#c3c3c3;color:#707070;}
 .prodList ul li .tit {margin:10px 0 0;color:#1a1a1a;font-size:20px;font-weight:normal;}
 .prodList ul li .txt {color:#8f8f8f;font-size:18px;}
+
+.detailSection {text-align:center;}
+.detailSection img {max-width:100%;}
