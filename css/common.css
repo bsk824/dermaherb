@@ -15,6 +15,7 @@
 #header .btnCloseMenu {display:none;}
 
 .pageTop {position:relative;height:220px;background:url(../images/img_sub_visual1.jpg) no-repeat 50% 50%;overflow:hidden;}
+.brand .pageTop {background-image:url(../images/img_sub_visual2.jpg);}
 .pageTop h1 {position:absolute;left:50%;bottom:-20px;width:300px;height:130px;margin-left:-150px;text-align:center;}
 .pageTop h1:before,
 .pageTop h1:after {content:"";position:absolute;top:0;right:0;bottom:0;left:0;}
@@ -122,7 +123,7 @@
 .pagination > a, .pagination strong {display:inline-block;margin:0 8px;font-size:24px;color:#c0c0c0;vertical-align:middle;}
 .pagination strong {color:#000;font-weight:normal;}
 .pagination [class*="pageNav"] {width:24px;height:25px;font:0/0 a!important;border:0;text-align:center;}
-.pagination [class*="pageNav"]:before {content:"";display:inline-block;height:25px;background:url('/Res/images/icon_pack.png') no-repeat;}
+.pagination [class*="pageNav"]:before {content:"";display:inline-block;height:25px;background:url('../images/icon_pack.png') no-repeat;}
 .pagination .pageNavStart:before {width:24px;background-position:-393px 0;}
 .pagination .pageNavPrev:before {width:18px;background-position:-418px 0;}
 .pagination .pageNavNext:before {width:18px;background-position:-436px 0;}
@@ -134,7 +135,7 @@
 .btnWrap span {display:inline-block;margin:0 5px;}
 
 [class*="btnType"] {display:inline-block;border:1px solid transparent;text-align:center;}
-[class*="btnType"]:before {content:"";background:url('/Res/images/icon_pack.png') no-repeat;}
+[class*="btnType"]:before {content:"";background:url('../images/icon_pack.png') no-repeat;}
 .btnType1 {line-height:28px;background:#fff;padding:0 10px;border-color:#aaa;color:#262626;}
 .btnType2 {line-height:38px;background:#eaeaea;border-color:#dbdbdb;color:#4c4c4c;font-size:12px;}
 .btnType3 {line-height:18px;background:#bcbcbc;border-color:#9c9c9c;border-radius:2px;color:#fff;font-size:11px;}
