@@ -105,7 +105,16 @@
         menu.on('click',function(){
             var $this = $(this);
             $this.parent().addClass('current').siblings().removeClass('current');
+            if($(window).width() < 768) {
+                $('.prodTabs ul ul').hide();
+                $this.next().show();
+            }
             return false;
+        });
+        subMenu.on('click',function(){
+            if($(window).width() < 768) {
+                $('.prodTabs ul ul').hide();
+            }
         });
         if (window.location.href.indexOf('#') > -1) {
     		var href = window.location.href;

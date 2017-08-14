@@ -107,7 +107,20 @@
 .prodTabs > ul > li:first-child > a {border-width:.1rem;}
 .prodTabs li ul {border-width:.1rem;}
 .prodTabs li li a {padding:0 1.5rem;line-height:7.8rem;font-size:1.8rem;}
-.prodTabs li li.active a {position:relative;margin-bottom:-2px;line-height:76px;color:#000;border-bottom:2px solid #000;font-weight:bold;}
+.prodTabs li li.active a {margin-bottom:-.2rem;line-height:7.6rem;border-width:.2rem;}
+@media all and (max-width:1024px) {
+    .prodTabs {margin:4rem 0 10rem;}
+    .prodTabs li li a {padding:0 .5rem;line-height:5rem;font-size:1.4rem;}
+    .prodTabs li li.active a {line-height:4.8rem;}
+}
+@media all and (max-width:767px) {
+    .prodTabs {margin:4rem 0 2rem;}
+    .prodTabs > ul > li > a {line-height:4rem;font-size:1.4rem;}
+    .prodTabs ul ul {display:none;}
+    .prodTabs li li {display:block;}
+    .prodTabs li li a,
+    .prodTabs li li.active a {border:0;line-height:3rem;}
+}
 
 .prodList ul {margin:0;}
 .prodList ul li {margin:5rem 0 0;}

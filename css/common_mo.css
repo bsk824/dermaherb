@@ -256,7 +256,7 @@
 	.btnTypeSearch:before {width:2rem;height:2rem;margin:0 .5rem 0 0;background-position:-9.6rem -4.1rem;background-size:50rem;}
 }
 @media all and (max-width:767px) {
-	.btnWrap {display:flex;margin:2rem 0 0;}
+	.btnWrap {display:flex;margin:2rem 0 0;justify-content:center;}
 	.btnWrap > span {width:50%;margin:0;}
 	.btnWrap > span + span {margin:0 0 0 .4rem;}
 	.btnWrap > span [class*="btnType"] {width:100%;padding:0;font-size:1.4rem;}
