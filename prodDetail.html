@@ -113,6 +113,7 @@
             return false;
         });
         subMenu.on('click',function(){
+            $('html, body').scrollTop(tabOffset);
             if($(window).width() < 768) {
                 $('.prodTabs ul ul').hide();
             }
@@ -130,7 +131,6 @@
     			dataType: 'html',
     			success : function(data){
                     $('.detailSection').html(data);
-                    $('html, body').scrollTop(tabOffset);
     			}
     		});
     	}

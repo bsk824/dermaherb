@@ -139,7 +139,7 @@
 	.page_about .list_about li {float:left;width:33.3333%;padding:0;background:#fff;}
 	.page_about .list_about .frame_g {display:block;padding-bottom:14px;float:none;width:auto;}
 	.page_about .list_about .info_cont {position:relative;left:0;text-align:center;}
-	.page_about .list_about .info_cont strong {display:block;padding-bottom:6px;font-size:28px;font-family:'notokr-regular';font-weight:normal;color:#0c1c24;}
+	.page_about .list_about .info_cont strong {display:block;padding-bottom:6px;font-size:28px;color:#0c1c24;}
 	.page_about .list_about .info_cont p {font-size:20px;color:#0c1c24;}
 	.page_about .list_about .info_cont p span {display:block;}
 
@@ -151,7 +151,7 @@
 .contactTxt {margin:30px 0 25px;color:#7a7a7a;font-size:18px;text-align:center;}
 .contactAgree {margin:10px 0 0;color:#262626;font-size:15px;text-align:center;}
 
-.detailSection {padding:250px 0 0;text-align:center;}
+.detailSection {padding:250px 0 0;height:1000px;text-align:center;}
 .detailSection img {max-width:100%;}
 
 .prodTabs {position:absolute;left:0;right:0;width:1200px;margin:35px auto;background:#fff;z-index:2;}
@@ -163,9 +163,9 @@
 .prodTabs > ul > li > a {display:block;border-top:1px solid #e5e5e5;border-right:1px solid #e5e5e5;line-height:47px;font-size:18px;color:#919191;text-align:center;}
 .prodTabs > ul > li:first-child > a {border-right:0;border-left:1px solid #e5e5e5;}
 .prodTabs > ul > li.current > a {background:#666;border-color:#666;color:#fff;}
-.prodTabs li ul {position:absolute;left:0;right:0;background:#fff;border-bottom:1px solid #e5e5e5;text-align:center;}
+.prodTabs li ul {position:absolute;left:0;right:0;margin:2px 0 0;background:#fff;border-bottom:1px solid #e5e5e5;text-align:center;}
 .prodTabs li.current ul {z-index:2;}
-.prodTabs li li {display:inline-block;float:none;}
+.prodTabs li li {display:inline-block;margin:0 15px;float:none;}
 .prodTabs li li a {display:inline-block;padding:0 15px;line-height:78px;color:#7b7b7b;font-size:18px;}
 .prodTabs li li.active a {position:relative;margin-bottom:-2px;line-height:76px;color:#000;border-bottom:2px solid #000;font-weight:bold;}
 

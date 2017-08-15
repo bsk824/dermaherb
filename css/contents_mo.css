@@ -106,7 +106,8 @@
 .prodTabs > ul > li {border-width:.2rem;}
 .prodTabs > ul > li > a {border-width:.1rem;line-height:4.7rem;font-size:1.8rem;}
 .prodTabs > ul > li:first-child > a {border-width:.1rem;}
-.prodTabs li ul {border-width:.1rem;}
+.prodTabs li ul {margin:.2rem 0 0;border-width:.1rem;}
+.prodTabs li li {margin:0;}
 .prodTabs li li a {padding:0 1.5rem;line-height:7.8rem;font-size:1.8rem;}
 .prodTabs li li.active a {margin-bottom:-.2rem;line-height:7.6rem;border-width:.2rem;}
 @media all and (max-width:1024px) {
