@@ -99,7 +99,8 @@
     </footer>
     <script>
     $(function(){
-        var menu = $('.prodTabs > ul > li > a'),
+        var tabOffset = $('.prodTabs').offset().top;
+            menu = $('.prodTabs > ul > li > a'),
             subMenu = $('.prodTabs ul ul a');
 
         menu.on('click',function(){
@@ -116,45 +117,38 @@
                 $('.prodTabs ul ul').hide();
             }
         });
-        if (window.location.href.indexOf('#') > -1) {
-    		var href = window.location.href;
-    		page = href.split('#')[1];
-
-    		var $this = $('.prodTabs ul ul [href="#' + page + '"]');
-            subMenu.parent().removeClass('active');
-    		$this.parent().addClass('active');
-            $this.closest('ul').parent().addClass('current').siblings().removeClass('current');
-
-    		$.ajax({
-    			url : page+'.html',
-    			dataType: 'html',
-    			success : function(data){
-                    $('.detailSection').html(data);
-    			}
-    		});
-    	}
 
     	function pageLoad(page){
-    		$.ajax({
-    			url : page+'.html',
-    			dataType: 'html',
-    			success : function(data){
-                    $('.detailSection').html(data);
-    			}
-    		});
-    	}
-
-    	window.onhashchange = function(e){
-    		var href = window.location.href;
-    		page = href.split('#')[1];
 
     		var $this = $('.prodTabs ul ul [href="#' + page + '"]');
             subMenu.parent().removeClass('active');
     		$this.parent().addClass('active');
             $this.closest('ul').parent().addClass('current').siblings().removeClass('current');
 
+    		$.ajax({
+    			url : page+'.html',
+    			dataType: 'html',
+    			success : function(data){
+                    $('.detailSection').html(data);
+                    $('html, body').scrollTop(tabOffset);
+    			}
+    		});
+    	}
+        if (window.location.href.indexOf('#') > -1) {
+        	var page = window.location.href.split('#')[1];
+            pageLoad(page);
+        }
+    	window.onhashchange = function(){
+        	var page = window.location.href.split('#')[1];
     		pageLoad(page);
     	}
+        $(window).on('scroll', function() {
+            if($(window).scrollTop() > tabOffset) {
+                $('.prodTabs').addClass('fixed');
+            } else {
+                $('.prodTabs').removeClass('fixed');
+            }
+        });
     })
     </script>
 

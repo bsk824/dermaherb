@@ -151,7 +151,11 @@
 .contactTxt {margin:30px 0 25px;color:#7a7a7a;font-size:18px;text-align:center;}
 .contactAgree {margin:10px 0 0;color:#262626;font-size:15px;text-align:center;}
 
-.prodTabs {margin:45px 0 170px;}
+.detailSection {padding:250px 0 0;text-align:center;}
+.detailSection img {max-width:100%;}
+
+.prodTabs {position:absolute;left:0;right:0;width:1200px;margin:35px auto;background:#fff;z-index:2;}
+.prodTabs.fixed {position:fixed;top:0;margin-top:0;}
 .prodTabs ul {position:relative;}
 .prodTabs ul:after {content:"";display:block;clear:both;}
 .prodTabs li {float:left;}
@@ -178,6 +182,3 @@
 .prodList ul li .btn a:first-child {background:#fff;border-color:#c3c3c3;color:#707070;}
 .prodList ul li .tit {margin:10px 0 0;color:#1a1a1a;font-size:20px;font-weight:normal;}
 .prodList ul li .txt {color:#8f8f8f;font-size:18px;}
-
-.detailSection {text-align:center;}
-.detailSection img {max-width:100%;}

@@ -101,7 +101,8 @@
     .contactAgree {font-size:1.1rem;}
 }
 
-.prodTabs {margin:4.5rem 0 17rem;}
+.detailSection {padding:25rem 0 0;}
+.prodTabs {left:0;right:0;width:auto;margin:3.5rem auto;}
 .prodTabs > ul > li {border-width:.2rem;}
 .prodTabs > ul > li > a {border-width:.1rem;line-height:4.7rem;font-size:1.8rem;}
 .prodTabs > ul > li:first-child > a {border-width:.1rem;}
@@ -109,12 +110,12 @@
 .prodTabs li li a {padding:0 1.5rem;line-height:7.8rem;font-size:1.8rem;}
 .prodTabs li li.active a {margin-bottom:-.2rem;line-height:7.6rem;border-width:.2rem;}
 @media all and (max-width:1024px) {
-    .prodTabs {margin:4rem 0 10rem;}
+    .detailSection {padding:20rem 0 0;}
     .prodTabs li li a {padding:0 .5rem;line-height:5rem;font-size:1.4rem;}
     .prodTabs li li.active a {line-height:4.8rem;}
 }
 @media all and (max-width:767px) {
-    .prodTabs {margin:4rem 0 2rem;}
+    .detailSection {padding:10rem 0 0;}
     .prodTabs > ul > li > a {line-height:4rem;font-size:1.4rem;}
     .prodTabs ul ul {display:none;}
     .prodTabs li li {display:block;}
